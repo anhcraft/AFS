@@ -1,20 +1,4 @@
 ﻿/*! (c) Copyright by Applications for student */
-function addLink() {
-    var selection = window.getSelection(),
-        pagelink = '(c) Copyright by Applications for student',
-        copytext = selection + pagelink,
-        newdiv = document.createElement('div');
-    newdiv.style.position = 'absolute';
-    newdiv.style.left = '-99999px';
-    document.body.appendChild(newdiv);
-    newdiv.innerHTML = copytext;
-    selection.selectAllChildren(newdiv);
-    window.setTimeout(function () {
-        document.body.removeChild(newdiv);
-    }, 100);
-}
-document.addEventListener('copy', addLink);
-
 var $_GET = {};
  
 (function (){
