@@ -1,0 +1,80 @@
+/* (c) Copyright by Applications for student */
+body { 
+	-moz-user-select: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important; 
+	-khtml-user-select: none !important; 
+	-moz-user-select: none !important; 
+	-ms-user-select: none !important;
+	user-select: none !important; 
+}
+
+#afs-unit-converter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(75,127,232,1);
+    background: -moz-linear-gradient(-45deg, rgba(75,127,232,1) 0%, rgba(0,171,17,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(75,127,232,1)), color-stop(100%, rgba(0,171,17,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(75,127,232,1) 0%, rgba(0,171,17,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(75,127,232,1) 0%, rgba(0,171,17,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(75,127,232,1) 0%, rgba(0,171,17,1) 100%);
+    background: linear-gradient(135deg, rgba(75,127,232,1) 0%, rgba(0,171,17,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b7fe8', endColorstr='#00ab11', GradientType=1 );
+}
+
+#afs-unit-converter *:focus {
+	outline:0 !important;
+}
+
+#afs-unit-converter-board {
+    height: 50%;
+    width: 50%;
+    padding: 2%;
+    margin: 11% 25%;
+    border: 1px #aaa solid;
+    background-color: #fff;
+}
+
+#afs-unit-converter-selectTypeConvert {
+    width: 50%;
+    margin: 5% 25%;
+    padding: 10px;
+}
+
+#afs-unit-converter-dataConvert {
+    border-top: 5px #333 solid;
+}
+
+#afs-unit-converter-dataConvert > div {
+    width: 80%;
+    margin: 2% 10%;
+}
+
+#afs-unit-converter-dataConvert > div > div > input {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 0px 5px 20px;
+    width: 50%;
+}
+
+#afs-unit-converter-dataConvert > div > div:nth-of-type(1) > select {
+    padding: 5px 0px 5px 20px;
+    margin-left: 10%;
+    width: 20%;
+}
+
+#afs-unit-converter-dataConvert > div > div:last-child > select {}
+
+#afs-unit-converter-dataConvert > div > div:nth-of-type(2) > select {
+    width: 20%;
+    margin-left: 60%;
+    padding: 5px 0px 5px 20px;
+}
+
+#afs-unit-converter-dataConvert > div > div:nth-of-type(2) {
+    margin: 1% 0;
+}
+
+#afs-unit-converter-dataConvert > div > div:nth-of-type(3) {color: #9478FF;}

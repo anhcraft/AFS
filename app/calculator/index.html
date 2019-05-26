@@ -1,0 +1,76 @@
+<!Doctype html>
+<html lang="">
+	<!-- (c) Copyright by Applications for student -->
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="author" content="(c) AFS" />
+		<meta name="robots" content="noindex,nofollow" />
+		<script type="text/javascript" src="../../data/js/jquery.js"></script> 
+		<script type="text/javascript" src="../../data/js/support.js"></script> 
+		<script type="text/javascript" src="../../source/afs.js"></script>
+		<script type="text/javascript" src="../../source/custom.js"></script> 
+		<script type="text/javascript" src="../../app/calculator/script.js"></script> 
+		<link type="text/css" rel="stylesheet" href="../../source/afs.css">
+		<link type="text/css" rel="stylesheet" href="../../data/css/normalize.css">
+		<!-- Source -->
+		<script type="text/javascript" src="calculator.js"></script>
+		<script type="text/javascript" src="calculator_lang.js"></script>
+		<script type="text/javascript" src="calculator_custom.js"></script>
+		<link type="text/css" rel="stylesheet" href="calculator.css">
+	</head>
+	<body>
+		<div id="afs-modal">
+			<div id="afs-modal-title"></div>
+			<div id="afs-modal-content"></div>
+			<div id="afs-modal-close">X</div>
+		</div>
+		<div id="afs-modal-fix"></div>
+		<div id="afs-calculator">
+			<div id="afs-calculator-board">
+				<div id="afs-calculator-input">
+					<input id="afs-calculator-text" type="text" disabled="disabled" />
+				</div>
+				<div id="afs-calculator-button">
+					<div class="afs-calculator-btn-group">
+						<button id="afs-calculator-ac">AC</button>
+						<button id="afs-calculator-del">DEL</button>
+						<button id="afs-calculator-setData">M</button>
+						<button id="afs-calculator-reData">M+-</button>
+						<button id="afs-calculator-plus" class="afs-calculator-btn-mkc">+</button>
+					</div>
+					<div class="afs-calculator-btn-group">
+						<button id="afs-calculator-opts">(</button>
+						<button id="afs-calculator-seven" class="afs-calculator-btn-num">7</button>
+						<button id="afs-calculator-eight" class="afs-calculator-btn-num">8</button>
+						<button id="afs-calculator-nine" class="afs-calculator-btn-num">9</button>
+						<button id="afs-calculator-mns" class="afs-calculator-btn-mkc">-</button>
+					</div>
+					<div class="afs-calculator-btn-group">
+						<button id="afs-calculator-cpts">)</button>
+						<button id="afs-calculator-four" class="afs-calculator-btn-num">4</button>
+						<button id="afs-calculator-five" class="afs-calculator-btn-num">5</button>
+						<button id="afs-calculator-six" class="afs-calculator-btn-num">6</button>
+						<button id="afs-calculator-mty" class="afs-calculator-btn-mkc">*</button>
+					</div>
+					<div class="afs-calculator-btn-group">
+						<button id="afs-calculator-pi">&pi;</button>
+						<button id="afs-calculator-one" class="afs-calculator-btn-num">1</button>
+						<button id="afs-calculator-two" class="afs-calculator-btn-num">2</button>
+						<button id="afs-calculator-three" class="afs-calculator-btn-num">3</button>
+						<button id="afs-calculator-bks" class="afs-calculator-btn-mkc">/</button>
+					</div>
+					<div class="afs-calculator-btn-group">
+						<button id="afs-calculator-pct">%</button>
+						<button id="afs-calculator-zero" class="afs-calculator-btn-num">0</button>
+						<button id="afs-calculator-dot">.</button>
+						<button id="afs-calculator-e">e</button>
+						<button id="afs-calculator-submit" class="afs-calculator-btn-sbm">=</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>calculator.run()</script>
+	</body>
+</html>

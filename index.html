@@ -1,0 +1,174 @@
+<!Doctype html>
+<html lang="">
+	<!-- (c) Copyright by Applications for student -->
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="author" content="(c) AFS" />
+		<meta name="robots" content="noindex,nofollow" />
+		<link rel="apple-touch-icon" sizes="57x57" href="./data/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./data/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./data/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./data/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./data/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./data/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./data/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./data/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./data/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./data/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./data/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./data/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./data/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./data/img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./data/img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link type="text/css" rel="stylesheet" href="./source/afs.css">
+		<link type="text/css" rel="stylesheet" href="./data/css/normalize.css">
+	</head>
+	<body>
+		<div id="afs-modal">
+			<div id="afs-modal-title"></div>
+			<div id="afs-modal-content"></div>
+			<div id="afs-modal-close">X</div>
+		</div>
+		<div id="contextmenu"></div>
+		<div id="afs-modal-fix"></div>
+		<div id="afs-container">
+			<div id="afs-body">
+				<div id="afs-body-app">
+					<div id="afs-body-app-close" style="display:none">
+						<span>X</span>
+					</div>
+					<div id="afs-body-app-iframe"></div>
+				</div>
+				<div id="afs-body-loading">
+					<div id="afs-loading">
+						<div id="floatingCirclesG">
+							<div class="f_circleG" id="frotateG_01"></div>
+							<div class="f_circleG" id="frotateG_02"></div>
+							<div class="f_circleG" id="frotateG_03"></div>
+							<div class="f_circleG" id="frotateG_04"></div>
+							<div class="f_circleG" id="frotateG_05"></div>
+							<div class="f_circleG" id="frotateG_06"></div>
+							<div class="f_circleG" id="frotateG_07"></div>
+							<div class="f_circleG" id="frotateG_08"></div>
+						</div>
+					</div>
+				</div>
+				<div id="afs-body-login">
+					<div id="afs-form-login">
+						<div id="afs-form-login-title"></div>
+						<div class="afs-form-area">
+							<input id="afs-form-login-inputUser" type="text"/>
+							<input id="afs-form-login-inputPass" type="password"/>
+						</div>
+						<div class="afs-form-box">
+							<div id="afs-rememberAccount">
+								<input type="checkbox" />
+								<span></span>
+							</div>
+							<a id="afs-form-login-toRegister" href="javascript:void(0)"></a>
+						</div>
+						<button id="afs-form-login-submit"></button>
+					</div>
+				</div>
+				<div id="afs-body-register">
+					<div id="afs-form-register">
+						<div id="afs-form-register-title"></div>
+						<div class="afs-form-area">
+							<input id="afs-form-register-inputName" type="text"/>
+							<input id="afs-form-register-inputUser" type="text"/>
+							<input id="afs-form-register-inputPass" type="password"/>
+							<input id="afs-form-register-inputRePass" type="password"/>
+							<button id="afs-form-register-btnCreatePassword"></button>
+							<button id="afs-form-register-btnTogglePassword"></button>
+						</div>
+						<div class="afs-form-box">
+							<a id="afs-form-register-toLogin" href="javascript:void(0)"></a>
+						</div>
+						<button id="afs-form-register-submit"></button>
+					</div>				
+				</div>
+				<div id="afs-body-setting">
+					<div id="afs-body-setting-exit"></div>
+					<div id="afs-body-setting-menu">
+						<div id="afs-body-setting-menu-account"></div>
+						<div id="afs-body-setting-menu-data"></div>
+						<div id="afs-body-setting-menu-personalized"></div>
+						<div id="afs-body-setting-menu-language"></div>
+					</div>
+					<div id="afs-body-setting-content">
+						<div id="afs-body-setting-content-account">
+							<div id="afs-body-setting-changeName">
+								<div class="afs-body-setting-title"></div>
+								<input type="text" id="afs-body-setting-changeName-input"/>
+								<div class="afs-body-setting-content-noticeSuccess"></div>
+							</div>
+							<div id="afs-body-setting-changePass">
+								<div class="afs-body-setting-title"></div>
+								<input type="password" id="afs-body-setting-changePass-input"/>
+								<div class="afs-body-setting-content-noticeSuccess"></div>
+							</div>
+							<div id="afs-body-setting-changeAvatar">
+								<div class="afs-body-setting-title"></div>
+								<input type="file" id="afs-body-setting-changeAvatar-input"/>
+							</div>
+						</div>
+						<div id="afs-body-setting-content-data">
+							<div id="afs-body-setting-removeAccount"></div>
+							<div id="afs-body-setting-removeAppData"></div>
+							<div id="afs-body-setting-removeMyData"></div>
+							<div id="afs-body-setting-removeAllData"></div>
+						</div>
+						<div id="afs-body-setting-content-personalized">
+							<div id="afs-body-setting-changeBackground">
+								<div class="afs-body-setting-title"></div>
+								<input type="file" id="afs-body-setting-changeBackground-input"/>
+							</div>
+						</div>
+						<div id="afs-body-setting-content-language">
+							<div class="afs-body-setting-title"></div>
+							<select></select>
+							<button id="afs-body-setting-content-language-submit"></button>
+						</div>
+					</div>				
+				</div>
+				<div id="afs-body-board">
+					<div id="afs-body-board-menu">
+						<div id="afs-body-board-menu-profile">
+							<div id="afs-body-board-menu-profile-avatar"></div>
+							<div id="afs-body-board-menu-profile-name"></div>
+						</div>
+						<div id="afs-body-board-menu-right">
+							<div id="afs-body-board-menu-setting"></div>
+							<div id="afs-body-board-menu-logout"></div>
+						</div>
+					</div>
+					<div id="afs-body-board-app"></div>
+					<div id="afs-body-board-footer"></div>
+				</div>
+			</div>
+			<div id="afs-footer"></div>
+		</div>
+		
+		<script type="text/javascript" src="./data/js/jquery.js"></script> 
+		<script type="text/javascript" src="./data/js/support.js"></script>
+		<script type="text/javascript" src="./source/afs.js"></script>
+		<script type="text/javascript" src="./source/custom.js"></script> 
+		<script type="text/javascript" src="./lang/lang.vi.js"></script>
+		<script type="text/javascript" src="./lang/lang.en.js"></script>
+		<script type="text/javascript" src="./plugin/updateNotification/script.js"></script>
+		<script type="text/javascript" src="./app/note/script.js"></script> 
+		<script type="text/javascript" src="./app/unit-converter/script.js"></script> 
+		<script type="text/javascript" src="./app/school-timetable/script.js"></script>
+		<script type="text/javascript" src="./app/calculator/script.js"></script>
+		<script type="text/javascript" src="./app/doyouknow/script.js"></script>
+		<script type="text/javascript" src="./app/roborun-sweed/script.js"></script>
+		<script>
+		afs.run();
+		var afs_contextmenu = [{text:'(c) AFS created by Huỳnh Duy Anh',title:'(c) AFS created by Huỳnh Duy Anh',id_:'afs-contextmenu-about'}]; contextmenu({elem:'#contextmenu',display: {name: 'AFS', link:'contextmenu.css'},sub:afs_contextmenu});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mật khẩu - AFS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='../../data/js/jquery.js'></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="generator-box">
+        <input id="passlength" type="number" value="16" />
+        <label for="passlength">Độ dài mật khẩu</label><br/>
+        <input id="use-lowercase" type="checkbox" checked="checked" disabled="disabled" />
+        <label for="use-lowercase">Sử dụng chữ thường</label><br/>
+        <input id="use-uppercase" type="checkbox" checked="checked" />
+        <label for="use-uppercase">Sử dụng chữ hoa</label><br/>
+        <input id="use-number" type="checkbox" checked="checked" />
+        <label for="use-number">Sử dụng số</label><br/>
+        <input id="use-specialcharacter" type="checkbox" checked="checked" />
+        <label for="use-specialcharacter">Sử dụng ký tự đặc biệt</label><br/><br/>
+        <button id="create">Tạo mật khẩu mới</button>
+    </div>
+    <div id="result">
+        <p><span>Mật khẩu của bạn:</span><b id="string"></b></p>
+        <p><span>Điểm bảo mật:</span><b id="score"></b><b>/100</b></p>
+        <p><span>Cách nhớ:</span>
+            <div id="memo"></div>
+        </p>
+    </div>
+</body>
+</html>

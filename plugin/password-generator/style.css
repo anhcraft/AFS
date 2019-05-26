@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Open Sans;
+    src: url(../../data/font/opensans.ttf);
+}
+body {
+	font-family:Open Sans,Arial,Sans-serif;
+	font-size:16px;
+	line-height:1.5;
+	color:#333;
+	cursor:default;
+	margin:0;
+	padding: 20px;
+}
+* {
+  outline: 0;
+}
+#use-lowercase:after {
+	background-color: #FF8484 !important;
+}
+#result {
+  border: 1px #ccc solid;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+#passlength {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  margin-right: 10px;
+  height: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+input[type="checkbox"]:after {
+  content: ' ';
+  display: inline-block;
+  visibility: visible;
+  background-color: #222;
+  padding-bottom: 5px;
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+input[type="checkbox"]:checked:after {
+  content: '\2714';
+}
+#string,
+#score,
+#memo {
+  padding-left: 10px;
+}
+
+#create {
+    background-color: #00AB54;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+#create:hover {
+    background-color: #008A44;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#string {
+    color: #20B7FF;
+}
+
+#score {
+    color: #00A58E;
+}
+
+#memo {
+    color: #913EFF;
+}

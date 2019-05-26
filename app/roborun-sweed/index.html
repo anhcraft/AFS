@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+	<title>RoboRun Sweed</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="author" content="(c) AFS" />
+	<meta name="robots" content="noindex,nofollow" />
+	<script type="text/javascript" src="../../data/js/jquery.js"></script> 
+	<script type="text/javascript" src="../../data/js/support.js"></script> 
+	<script type="text/javascript" src="../../source/afs.js"></script>
+	<script type="text/javascript" src="../../source/custom.js"></script> 
+	<link type="text/css" rel="stylesheet" href="../../source/afs.css">
+	<link type="text/css" rel="stylesheet" href="../../data/css/normalize.css">
+	<!-- Source -->
+	<script type="text/javascript" src="roborun_sweed.js"></script>
+	<link type="text/css" rel="stylesheet" href="roborun_sweed.css">
+</head>
+<body>
+	<div id="afs-modal">
+		<div id="afs-modal-title"></div>
+		<div id="afs-modal-content"></div>
+		<div id="afs-modal-close">X</div>
+	</div>
+	RoboRun Sweed là trò chơi điều kiển robo né tránh các grobo trên đường đi để robo đi xa nhất và có nhiều tiền nhất<br>
+	Grobo xanh không gây hại, bạn sẽ được nhận $1<br>
+	Grobo đen vô cùng nguy hiểm, sẽ khiến robo bị chết<br>
+	Grobo đỏ làm bạn mất $1<br>
+	Grobo hồng vô cùng hữu dụng, bạn sẽ được bảo vệ trong 5 giây đi qua các grobo đen mà không bị gì<br><br><br>
+	<div class="container">
+	  <div class="menu">
+		<div class="totalCoin">$0</div>
+		<div class="totalDistance">0m</div>
+		<div class="play">Game mới</div>
+		<div class="mode">Dễ/Khó</div>
+	  </div>
+
+	  <div class="game">
+		<div class="g">
+			<div class="robo"></div>
+			<div class="coinsArea"></div>
+			<div class="area">
+			  <div class="dirt">Ấn vào robo để bắt đầu chơi</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+	<script>roborun_sweed.run()</script>
+</body>
+</html>

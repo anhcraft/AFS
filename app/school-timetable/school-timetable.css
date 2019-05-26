@@ -1,0 +1,105 @@
+/* (c) Copyright by Applications for student */
+body { 
+	-moz-user-select: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important; 
+	-khtml-user-select: none !important; 
+	-moz-user-select: none !important; 
+	-ms-user-select: none !important;
+	user-select: none !important; 
+}
+
+#afs-school-timetable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(201,7,219,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(201,7,219,1)));
+    background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(201,7,219,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(201,7,219,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(201,7,219,1) 100%);
+    background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(201,7,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#c907db', GradientType=1 );
+}
+
+#afs-school-timetable-board {
+    max-width: 70%;
+    background-color: #fff;
+    height: 70%;
+    margin: 7% 15%;
+}
+
+#afs-school-timetable-table {
+    width: 100%;
+    height: 100.2%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+#afs-school-timetable-table tr {
+    height: 10.1%;
+}
+
+#afs-school-timetable-table tr td,
+#afs-school-timetable-table tr th {
+    border-top: 1px #aaa solid;
+    border-left: 1px #aaa solid;
+	width: 10%;
+}
+
+#afs-school-timetable-table tr td:hover,
+#afs-school-timetable-table tr th:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#afs-school-timetable-table tr th {
+    font-weight: bold;
+	padding: 1.2% 0%;
+}
+
+#afs-school-timetable-edit {
+	background-image: url(./data/edit.png);
+}
+#afs-school-timetable-ok {
+	background-image: url(./data/ok.png);
+}
+
+#afs-school-timetable-edit,
+#afs-school-timetable-ok {
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    right: 10%;
+    position: absolute;
+    top: 15%;
+}
+
+#afs-school-timetable-edit:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.school-timetable-today {
+    background-color: #FFE9D6;
+}
+
+#afs-school-timetable-table.edit-table {
+    background-color: #FFCECE;
+}
+
+#afs-school-timetable-table.edit-table tr td:hover {
+    background-color: #fff !important;
+    color: #333 !important;
+}
+#afs-school-timetable-table.edit-table tr th {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+
+.school-timetable-tomorrow {
+    background-color: #BEFFDB;
+}

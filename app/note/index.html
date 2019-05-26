@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="">
+	<!-- (c) Copyright by Applications for student -->
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="author" content="(c) AFS" />
+		<meta name="robots" content="noindex,nofollow" />
+		<script type="text/javascript" src="../../data/js/jquery.js"></script> 
+		<script type="text/javascript" src="../../data/js/support.js"></script> 
+		<script type="text/javascript" src="../../source/afs.js"></script>
+		<script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
+		<script type="text/javascript" src="../../source/custom.js"></script> 
+		<script type="text/javascript" src="../../app/note/script.js"></script> 
+		<link type="text/css" rel="stylesheet" href="../../source/afs.css">
+		<link type="text/css" rel="stylesheet" href="../../data/css/normalize.css">
+		<!-- Source -->
+		<script type="text/javascript" src="note.js"></script>
+		<script type="text/javascript" src="note_lang.js"></script>
+		<script type="text/javascript" src="note_custom.js"></script>
+		<link type="text/css" rel="stylesheet" href="note.css">
+	</head>
+	<body>
+		<div id="afs-modal">
+			<div id="afs-modal-title"></div>
+			<div id="afs-modal-content"></div>
+			<div id="afs-modal-close">X</div>
+		</div>
+		<div id="afs-modal-fix"></div>
+		<div id="afs-note">
+			<div id="afs-note-loading">
+				<div id="note-loading">
+					<div class="windows8">
+						<div class="wBall" id="wBall_1">
+							<div class="wInnerBall"></div>
+						</div>
+						<div class="wBall" id="wBall_2">
+							<div class="wInnerBall"></div>
+						</div>
+						<div class="wBall" id="wBall_3">
+							<div class="wInnerBall"></div>
+						</div>
+						<div class="wBall" id="wBall_4">
+							<div class="wInnerBall"></div>
+						</div>
+						<div class="wBall" id="wBall_5">
+							<div class="wInnerBall"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="afs-note-board">
+				<div id="afs-note-board-menu">
+					<div id="afs-note-board-new"></div>
+					<div id="afs-note-board-open"></div>
+					<div id="afs-note-board-edit"></div>
+					<div id="afs-note-board-delete"></div>
+				</div>
+				<div id="afs-note-board-item"></div>
+				<div id="afs-note-board-setting"></div>
+			</div>
+			<div id="afs-note-open">
+				<div id="afs-note-open-menu">
+					<div id="afs-note-open-itemTitle"></div>
+					<div id="afs-note-open-exit"></div>
+				</div>
+				<div id="afs-note-open-itemDescription"></div>
+				<div id="afs-note-open-itemContent"></div>
+			</div>
+			<div id="afs-note-editor">
+				<div id="afs-note-editor-menu">
+					<input id="afs-note-editor-itemTitle" type="text"/>
+					<div id="afs-note-editor-complete"></div>
+					<div id="afs-note-editor-exit"></div>
+				</div>
+				<textarea id="afs-note-editor-itemDescription"></textarea>
+				<textarea id="afs-note-editor-itemEditor" name="afs-note-editor-itemEditor"> </textarea>
+				<script>
+					CKEDITOR.replace('afs-note-editor-itemEditor');
+				</script>
+			</div>
+		</div>
+		<!--<footer>
+			(c) Copyright by AFS Note.
+		</footer>-->
+		<script>note.run()</script>
+	</body>
+</html>

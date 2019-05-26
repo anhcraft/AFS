@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create password</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='../../data/js/jquery.js'></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="generator-box">
+        <input id="passlength" type="number" value="16" />
+        <label for="passlength">Password length</label><br/>
+        <input id="use-lowercase" type="checkbox" checked="checked" disabled="disabled" />
+        <label for="use-lowercase">Use lowercase</label><br/>
+        <input id="use-uppercase" type="checkbox" checked="checked" />
+        <label for="use-uppercase">Use uppercase</label><br/>
+        <input id="use-number" type="checkbox" checked="checked" />
+        <label for="use-number">Use numberic</label><br/>
+        <input id="use-specialcharacter" type="checkbox" checked="checked" />
+        <label for="use-specialcharacter">Use special characters</label><br/><br/>
+        <button id="create">Create new password</button>
+    </div>
+    <div id="result">
+        <p><span>Your password:</span><b id="string"></b></p>
+        <p><span>Security point:</span><b id="score"></b><b>/100</b></p>
+        <p><span>Remember your password:</span>
+            <div id="memo"></div>
+        </p>
+    </div>
+</body>
+</html>

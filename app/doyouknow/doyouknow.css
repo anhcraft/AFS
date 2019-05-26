@@ -1,0 +1,127 @@
+/* (c) Copyright by Applications for student */
+body { 
+	-moz-user-select: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important; 
+	-khtml-user-select: none !important; 
+	-moz-user-select: none !important; 
+	-ms-user-select: none !important;
+	user-select: none !important; 
+}
+
+#afs-doyouknow {
+	background: rgba(0,132,255,1);
+	background: -moz-linear-gradient(top, rgba(0,132,255,1) 0%, rgba(201,227,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,132,255,1)), color-stop(100%, rgba(201,227,255,1)));
+	background: -webkit-linear-gradient(top, rgba(0,132,255,1) 0%, rgba(201,227,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,132,255,1) 0%, rgba(201,227,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,132,255,1) 0%, rgba(201,227,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,132,255,1) 0%, rgba(201,227,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ff', endColorstr='#c9e3ff', GradientType=0 );
+	position:fixed;
+	width:100%;
+	overflow:auto;
+	height:100%;
+	padding-bottom:10%;
+}
+
+#afs-doyouknow-board {
+    width: 80%;
+    position: absolute;
+    margin: 4% 10%;
+}
+
+#afs-doyouknow-category {
+    height: 80%;
+}
+
+
+#afs-doyouknow-title {
+    padding-bottom: 5%;
+    font-size: 350%;
+    color: #FFF;
+    text-align: center;
+}
+
+#afs-doyouknow-category div {
+    width: 20%;
+    color: #fff;
+    height: 42%;
+    text-align: center;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 1% 5%;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    font-size: 200%;
+    padding: 6% 0;
+}
+
+#afs-doyouknow-category-universe {
+    background-image: url(./data/universe.jpg);
+}
+
+#afs-doyouknow-category-earth {
+    background-image: url(./data/earth.jpg);
+}
+
+#afs-doyouknow-category-animal {
+    background-image: url(./data/animal.jpg);
+}
+
+#afs-doyouknow-category-plant {
+    background-image: url(./data/plant.jpg);
+}
+
+#afs-doyouknow-category-technology {
+    background-image: url(./data/technology.jpg);
+}
+
+#afs-doyouknow-list > div {
+	 background-color: #fff;
+	 padding: 3%;
+}
+
+#afs-doyouknow-list > div > div > div:first-child {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#afs-doyouknow-list > div > div > div:first-child:hover {
+	color:#555;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor:pointer;
+}
+
+#afs-doyouknow-list > div > div {
+    margin-bottom: 10%;
+}
+
+#afs-doyouknow-list > div > div > div:nth-of-type(2) {
+	margin-top:1%;
+}
+#afs-doyouknow-list > div > div > div:nth-of-type(2) > div {margin-left: 22%;}
+#afs-doyouknow-list > div > div > div:nth-of-type(2) > img {
+    width: 20%;
+    float: left;
+}
+
+#afs-doyouknow-list-backToHome, 
+#afs-doyouknow-list-backToItem {
+	text-align:center;
+    padding: 1% !important;
+    background-color: #333 !important;
+    color: #fff;
+    width: 14%;
+    font-size: 95%;
+}
+
+#afs-doyouknow-list > div > div > div:nth-of-type(3) {
+    margin: 0 22%;
+}
