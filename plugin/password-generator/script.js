@@ -17,7 +17,7 @@ $(function() {
         }
         for (var i = 0; i < str.length; i++) {
             var t = str[i];
-            if (lastStr == t) {
+            if (lastStr === t) {
                 score = score - (25 / (pass.length)) - (25 / (pass.length));
             }
             lastStr = t;
@@ -34,83 +34,83 @@ $(function() {
         for (var i = 0; i < password.slice('').length; i++) {
             var pass = password.slice('')[i];
             pass = pass.toLowerCase();
-            if (pass == "a") {
-                var pass = 'age';
+            if (pass === "a") {
+                pass = 'age';
             }
-            if (pass == "b") {
-                var pass = 'boss';
+            if (pass === "b") {
+                pass = 'boss';
             }
-            if (pass == "c") {
-                var pass = 'come';
+            if (pass === "c") {
+                pass = 'come';
             }
-            if (pass == "d") {
-                var pass = 'dark';
+            if (pass === "d") {
+                pass = 'dark';
             }
-            if (pass == "e") {
-                var pass = 'english';
+            if (pass === "e") {
+                pass = 'english';
             }
-            if (pass == "f") {
-                var pass = 'fly';
+            if (pass === "f") {
+                pass = 'fly';
             }
-            if (pass == "g") {
-                var pass = 'game';
+            if (pass === "g") {
+                pass = 'game';
             }
-            if (pass == "h") {
-                var pass = 'home';
+            if (pass === "h") {
+                pass = 'home';
             }
-            if (pass == "i") {
-                var pass = 'ice';
+            if (pass === "i") {
+                pass = 'ice';
             }
-            if (pass == "j") {
-                var pass = 'juice';
+            if (pass === "j") {
+                pass = 'juice';
             }
-            if (pass == "k") {
-                var pass = 'king';
+            if (pass === "k") {
+                pass = 'king';
             }
-            if (pass == "l") {
-                var pass = 'lion';
+            if (pass === "l") {
+                pass = 'lion';
             }
-            if (pass == "m") {
-                var pass = 'most';
+            if (pass === "m") {
+                pass = 'most';
             }
-            if (pass == "n") {
-                var pass = 'note';
+            if (pass === "n") {
+                pass = 'note';
             }
-            if (pass == "o") {
-                var pass = 'off';
+            if (pass === "o") {
+                pass = 'off';
             }
-            if (pass == "p") {
-                var pass = 'pen';
+            if (pass === "p") {
+                pass = 'pen';
             }
-            if (pass == "q") {
-                var pass = 'queen';
+            if (pass === "q") {
+                pass = 'queen';
             }
-            if (pass == "r") {
-                var pass = 'rar';
+            if (pass === "r") {
+                pass = 'rar';
             }
-            if (pass == "s") {
-                var pass = 'ship';
+            if (pass === "s") {
+                pass = 'ship';
             }
-            if (pass == "t") {
-                var pass = 'time';
+            if (pass === "t") {
+                pass = 'time';
             }
-            if (pass == "u") {
-                var pass = 'usa';
+            if (pass === "u") {
+                pass = 'usa';
             }
-            if (pass == "v") {
-                var pass = 'visa';
+            if (pass === "v") {
+                pass = 'visa';
             }
-            if (pass == "w") {
-                var pass = 'want';
+            if (pass === "w") {
+                pass = 'want';
             }
-            if (pass == "x") {
-                var pass = 'xbox';
+            if (pass === "x") {
+                pass = 'xbox';
             }
-            if (pass == "y") {
-                var pass = 'you';
+            if (pass === "y") {
+                pass = 'you';
             }
-            if (pass == "z") {
-                var pass = 'zip';
+            if (pass === "z") {
+                pass = 'zip';
             }
             pass = pass + ' ';
             string = string + pass;
@@ -119,17 +119,17 @@ $(function() {
     }
     $('#create').click(function() {
         var string = '';
-        var pass = '';
-        if ($('#use-lowercase').prop('checked') == true) {
+        pass = '';
+        if ($('#use-lowercase').prop('checked')) {
             string = string + "abcdefghijklmnopqrstuvwxyz";
         }
-        if ($('#use-uppercase').prop('checked') == true) {
+        if ($('#use-uppercase').prop('checked')) {
             string = string + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
-        if ($('#use-specialcharacter').prop('checked') == true) {
+        if ($('#use-specialcharacter').prop('checked')) {
             string = string + "(){}[]-_+=/*<?/>,.:;|";
         }
-        if ($('#use-number').prop('checked') == true) {
+        if ($('#use-number').prop('checked')) {
             string = string + "0123456789";
         }
         var word = string.split('');

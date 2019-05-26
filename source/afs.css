@@ -5,25 +5,6 @@
     src: url(../data/font/opensans.ttf);
 }
 
-.contextmenu {
-	display: none;
-    background-color: #fff;
-    position: absolute;
-    z-index: 99999999;
-    box-shadow: 0.3px 0.3px 0.3px #000;
-    -moz-box-shadow: 0.3px 0.3px 0.3px #000;
-    -webkit-box-shadow: 0.3px 0.3px 0.3px #000;
-    border: 1px #ccc solid;
-    cursor: default;
-    width: 300px;
-}
-.contextmenu-layout {
-    width: 298px;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-}
-.contextmenu-layout li{width:100%;padding:6px 20px;color:#383333}.contextmenu-layout li:hover{background-color:#1496F3;color:#fff;transition:background 0.4s ease-in-out;-o-transition:background 0.4s ease-in-out;-webkit-transition:background 0.4s ease-in-out;-ms-transition:background 0.4s ease-in-out;-moz-transition:background 0.4s ease-in-out}
-
 *{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;

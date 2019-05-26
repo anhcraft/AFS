@@ -1,30 +1,18 @@
 ﻿/*! (c) Copyright by Applications for student */
 var $_GET = {};
- 
-(function (){
-    var a = window.location.href; 
-    var b = a.indexOf('?');
-    var c = a.slice(b+1);
-    var d = c.split('&'); 
- 
-    var obj = '';
-    for(var i = 0; i < d.length; i++){
-        var e = d[i];
-        var f = e.split('='); 
-        var g = f[0]; 
-        var h = f[1]; 
-        var ii = JSON.stringify($_GET);
-        var j = ii.slice(1,ii.length-1); 
-        if(i == 0) { 
-            obj = '"' + g + '" : "' + h + '"';
-        }
-        if(i !== 0){ 
-            obj += ', "' + g + '" : "' + h + '"';
-        }
-    }
- 
-    obj = '{' + obj + '}'; 
-    $_GET = JSON.parse(obj);
+(function () {
+	var url = window.location.href;
+	var pos = url.indexOf('?');
+	if (pos < 0) {
+		return;
+	}
+	var queries = url.slice(pos + 1);
+	var queryArray = queries.split('&');
+	for (var i = 0; i < queryArray.length; i++) {
+		var query = queryArray[i];
+		var tokenArray = query.split('=');
+		$_GET[tokenArray[0]] = tokenArray[1];
+	}
 })();
 
 var internet = "";
@@ -57,11 +45,10 @@ var afs = {
 			afsCustom = JSON.parse(o);
 		},
 		getLang: function(u) {
-			var a = '';
 			for(var i = 0; i < afsLang.length; i++){
 				var lang = afsLangCode[i];
 				var obj = JSON.parse(afsLang[i]);
-				if(lang == afsCustom.lang){
+				if(lang === afsCustom.lang){
 					if(typeof obj[u] !== undefined) {
 						return obj[u];
 					}
@@ -104,13 +91,13 @@ var afs = {
 				var l_appLang = lang[i].appLang;
 				var l_appName = lang[i].appName;
 				
-				if(i_size == 'small'){
+				if(i_size === 'small'){
 					i_size = 'width:128px;height:128px;';
 				}
-				if(i_size == 'medium'){
+				if(i_size === 'medium'){
 					i_size = 'width:256px;height:256px;';
 				}
-				if(i_size == 'large'){
+				if(i_size === 'large'){
 					i_size = 'width:384px;height:384px;';
 				}
 				
@@ -149,21 +136,11 @@ var afs = {
 		},
 		getLangCode: function(){
 			var a = afs.dom.getData('afs-langcode');
-			if(a == null || a === undefined){
-				return 'vi';
-			}
-			if(a !== null || a !== undefined){
-				return a;
-			}
+			return a === null ? 'vi' : a;
 		},
 		getBgUrl: function(){
 			var a = afs.dom.getData('afs-bgurl');
-			if(a == null || a === undefined){
-				return './data/img/bg.jpg';
-			}
-			if(a !== null || a !== undefined){
-				return a;
-			}
+			return a === null ? './data/img/bg.jpg' : a;
 		},
 		getUrlAvatar: function(){
 			var data = afs.dom.getData('afs-'+afsUser+'-avatar');
